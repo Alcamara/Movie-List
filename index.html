@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jQuery.js" ></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Movie List</h1>
+    </header>
+    <input id="movie-name" placeholder="Enter Movie Name" type="text">
+
+    <select name="movie-genre" id="movie-genre">
+        <option value="Action">Action</option>
+        <option value="Drama">drama</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Documentary">Documentary</option>
+      </select>
+
+    <input id="year-release" placeholder="Enter Year of Release" type="text">
+
+    <button id="submit-button">Submit</button>
+
+    <!-- Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Movie Name</th>
+                <th>Movie Genre</th>
+                <th>Year of Release</th>
+                <th>Flage</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="movie-table">
+            <tr>
+                <td id="movie-title">Friday</td>
+                <td>Comedy</td>
+                <td>1993</td>
+                <td class="flag-btn">🚩</td>
+                <td class="delete-btn">❌ </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Number on movies: <span id="movie-count">0</span></p>
+</body>
+</html>
